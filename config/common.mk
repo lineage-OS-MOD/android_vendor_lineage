@@ -119,6 +119,21 @@ PRODUCT_PACKAGES += \
     Phonograph \
     Updater
 
+# Sauces packages
+PRODUCT_PACKAGES += \
+    Lawnchair
+
+# Sauces overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/lawnchair
+
+# Sauces sysconfigs
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+
+# Sauces permissions
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lawnchair.xml
+
 # Themes
 PRODUCT_PACKAGES += \
     LineageThemesStub \
@@ -192,8 +207,7 @@ endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    TrebuchetQuickStep
+    SystemUI
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
