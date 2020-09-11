@@ -111,9 +111,12 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
+    Aves \
+    GeoGebra \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
+    Phonograph \
     Updater
 
 # Themes
