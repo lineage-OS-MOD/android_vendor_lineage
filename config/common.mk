@@ -111,8 +111,8 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    Aves \
-    GeoGebra \
+    Albums \
+    Calculator \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \

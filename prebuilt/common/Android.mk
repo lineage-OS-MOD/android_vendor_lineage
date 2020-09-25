@@ -47,11 +47,11 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
-# Aves
+# Albums
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := Aves
-LOCAL_SRC_FILES := app/Aves.apk
+LOCAL_MODULE := Albums
+LOCAL_SRC_FILES := app/Albums.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := platform
@@ -71,11 +71,11 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
-#GeoGebra
+#Calculator
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := GeoGebra
-LOCAL_SRC_FILES := app/GeoGebra.apk
+LOCAL_MODULE := Calculator
+LOCAL_SRC_FILES := app/Calculator.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := platform
