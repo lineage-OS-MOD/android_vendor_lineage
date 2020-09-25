@@ -115,7 +115,6 @@ PRODUCT_PACKAGES += \
     Calculator \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard \
     Phonograph \
     Updater
 
