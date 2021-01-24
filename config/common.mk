@@ -1,6 +1,6 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product-if-exists, vendor/lineage/config/lineagefe.mk)
+$(call inherit-product-if-exists, vendor/lineage/config/predator.mk)
 $(call inherit-product-if-exists, vendor/addons/config.mk)
 
 PRODUCT_BRAND ?= LineageOS
@@ -241,8 +241,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
 # Product version should match Android version
-PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 69
+PRODUCT_VERSION_MAJOR = 20
+PRODUCT_VERSION_MINOR = 21
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
@@ -255,10 +255,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 # Increase LineageFE Version with each major release.
-LINEAGEFE_VERSION := Isotope
+PREDATOR_VERSION := Beta
 
-LINEAGE_VERSION := LineageFE-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
-LINEAGE_DISPLAY_VERSION := LineageFE-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
+LINEAGE_VERSION := Predator-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
+LINEAGE_DISPLAY_VERSION := Predator-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage

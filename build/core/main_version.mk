@@ -4,7 +4,7 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageFE System Version
+# Predator System Version
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.lineage.version=$(LINEAGE_VERSION) \
     ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION) \
