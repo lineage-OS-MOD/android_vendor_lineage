@@ -241,8 +241,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
 # Product version should match Android version
-PRODUCT_VERSION_MAJOR = 20
-PRODUCT_VERSION_MINOR = 21
+PRODUCT_VERSION_MAJOR = 10
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
@@ -254,11 +253,8 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
-# Increase LineageFE Version with each major release.
-PREDATOR_VERSION := Beta
-
-LINEAGE_VERSION := Predator-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
-LINEAGE_DISPLAY_VERSION := Predator-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(LINEAGEFE_VERSION)
+LINEAGE_VERSION := Predator-v$(PRODUCT_VERSION_MAJOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)
+LINEAGE_DISPLAY_VERSION := Predator-v$(PRODUCT_VERSION_MAJOR)-$(LINEAGE_BUILD)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
