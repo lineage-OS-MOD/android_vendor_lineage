@@ -12,6 +12,7 @@ endif
 # Predator System Version
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.lineage.version=$(LINEAGE_VERSION) \
+    ro.build.datetime=$(BUILD_DATE_TIME) \
     ro.predator.codename=$(PREDATOR_CODENAME) \
     ro.lineage.build.type=$(PREDATOR_BUILD_TYPE) \
     ro.lineage.build.version=$(PREDATOR_VERSION_BASE) \
