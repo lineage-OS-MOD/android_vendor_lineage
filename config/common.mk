@@ -240,10 +240,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
-# MIUI like brightness slider
-PRODUCT_PACKAGES += \
-    BrightnessSliderOverlay
-
 # Product version should match Android version
 PRODUCT_VERSION_MAJOR = 10
 
