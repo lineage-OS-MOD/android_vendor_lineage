@@ -1,7 +1,7 @@
 # Set all versions
 PREDATOR_BUILD_TYPE ?= UNOFFICIAL
 PREDATOR_VERSION_BASE := 1.0
-PREDATOR_CODENAME := Rembang-Jateng
+PREDATOR_BUILD_CODENAME := Rembang-Jateng
 
 # Build fingerprint
 ifneq ($(BUILD_FINGERPRINT),)
@@ -13,7 +13,7 @@ endif
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.lineage.version=$(LINEAGE_VERSION) \
     ro.build.datetime=$(BUILD_DATE_TIME) \
-    ro.predator.codename=$(PREDATOR_CODENAME) \
+    ro.predator.codename=$(PREDATOR_BUILD_CODENAME)) \
     ro.lineage.build.type=$(PREDATOR_BUILD_TYPE) \
     ro.lineage.build.version=$(PREDATOR_VERSION_BASE) \
     ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION) \

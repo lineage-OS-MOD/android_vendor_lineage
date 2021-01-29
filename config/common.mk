@@ -242,6 +242,10 @@ DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
 # Product version should match Android version
 PRODUCT_VERSION_MAJOR = 10
+PREDATOR_BUILD_TYPE ?= UNOFFICIAL
+PREDATOR_VERSION_BASE := 1.0
+PREDATOR_BUILD_CODENAME := Rembang-Jateng
+BUILD_TIME := $(shell date -u +%H%M)
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
